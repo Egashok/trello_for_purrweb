@@ -1,13 +1,15 @@
 const CardPopup = ({cardpop,setCardpop}) => {
+
+    
     return (
     
-        <div className="cardpopup">
+        <div  className="cardpopup" onClick={()=>setCardpop(false)}>
 
-        <div className="card__content">
+        <div className="card__content" onClick={( e)=>e.stopPropagation()} >
 
         <div className="cardpopup__top">
-                <h3 className="cardpopup__title">Задачка ало</h3>
-                <textarea className="cardpopup__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem sunt, accusantium harum non eius neque quod perspiciatis vitae debitis esse voluptatibus unde laborum libero quidem perferendis natus necessitatibus iure?</textarea>
+                <h3 className="cardpopup__title">Помыть посуду</h3>
+                <textarea  placeholder="Описание задачи" className="cardpopup__txt"></textarea>
             
             </div>
 

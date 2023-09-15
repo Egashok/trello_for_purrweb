@@ -130,8 +130,8 @@ margin-top: 20px;}
 display: block;
 position: absolute;
 z-index: 3000;
-background-color:gray;
-opacity: 0.9;
+background-color:rgba(3, 2, 34, 0.9);
+
 width: 100vw;
 z-index: 30;
 height: 100vh;
@@ -140,6 +140,26 @@ height: 100vh;
 
 }
 .card__content{
-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 500px;
 margin: 0 auto;
+background-color:gray;
+text-align: center;
+cursor: pointer;
+}
+.cardpopup__txt{
+resize: none;
+height: 150px;
+width: 300px;
+
+}
+.cardpopup__top{
+  width: 300px;}
+.cardpopup__bottom{
+
+  width: 300px;
 }

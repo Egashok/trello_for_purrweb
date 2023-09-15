@@ -15,7 +15,7 @@ const Board = () => {
         
         <div className='board'>
           
-            {cardpop && <CardPopup/>}
+            {cardpop && <CardPopup cardpop={cardpop} setCardpop={setCardpop}/>}
 
             <h1 className="main__title">Trello for Purrweb</h1>
             <div className="columns">
