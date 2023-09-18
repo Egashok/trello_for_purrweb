@@ -6,28 +6,35 @@ import CardPopup from "../UI/CardPopup";
 
 const Board = () => {
 
-    const [cardpop,setCardpop]=useState(false)
+    const [cardpop, setCardpop] = useState(false)
 
 
 
-    return ( 
-        
-        
+    const [cards, setCards] = useState([
+
+        {}
+    ])
+
+
+
+    return (
+
+
         <div className='board'>
-          
-            {cardpop && <CardPopup cardpop={cardpop} setCardpop={setCardpop}/>}
+
+            {cardpop && <CardPopup cardpop={cardpop} setCardpop={setCardpop} />}
 
             <h1 className="main__title">Trello for Purrweb</h1>
             <div className="columns">
 
-            <Column card={<Card cardpop={cardpop} setCardpop={setCardpop}/>} title={"TODO"}/>
-            <Column title={"In Progress"}/>
-            <Column title={"Testing"}/>
-            <Column title={"Done"}/>
+                <Column card={<Card cardpop={cardpop} setCardpop={setCardpop} />} title={"TODO"} />
+                <Column title={"In Progress"} />
+                <Column title={"Testing"} />
+                <Column title={"Done"} />
             </div>
 
-      </div>
-       );
+        </div>
+    );
 }
- 
+
 export default Board;
