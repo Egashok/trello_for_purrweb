@@ -3,16 +3,11 @@ import React from 'react';
 const UserForm = ({ visible, setVisible }) => {
 
     function authorization() {
-
         let input = document.querySelector('.user__form-name');
         localStorage.username = input.value
-        localStorage.users = new Array()
-        // localStorage.users.push(localStorage.username)
-
         setVisible(false)
-
     }
-
+    console.log(localStorage.username)
     return (
         <div className='user__popup'>
 

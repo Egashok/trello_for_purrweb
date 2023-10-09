@@ -1,0 +1,8 @@
+.comment{
+    resize: none;
+  }
+  .comment.active{
+    background-color: black;
+  
+  
+  }

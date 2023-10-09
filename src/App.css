@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: blue;
+
 }
 
 .user__form {
@@ -40,16 +42,19 @@ body {
 }
 
 .columns {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
 }
 
 .board {
-  height: 100vw;
+ 
+  position: relative;
 }
 
 .main__title {
   margin: 0;
+  padding:20px 0;
 }
 
 .case__creator-name {
@@ -84,19 +89,26 @@ body {
 .column__title-img {
   fill: white;
 }
+.columns{
+position: relative;}
+.column__items{
+position: relative;}
 
+.board__column{
+position: relative;}
 .Creator {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: rgb(206, 191, 191);
   margin: auto;
-  position: absolute;
+
 
   text-align: center;
   width: 300px;
   height: 150px;
 }
+
 
 .creator__desc {
   width: 250px;
@@ -126,6 +138,7 @@ body {
 }
 
 .card {
+
   background-color: rgb(19, 19, 124);
   color: white;
   min-height: 100px;
@@ -134,15 +147,21 @@ body {
 .card {
   width: 300px;
   cursor: pointer;
+  z-index: 0;
+  position: relative;
 }
 
-.card__trash {
-  fill: white;
+
+.card__trash{
   position: relative;
-  display: block;
-  top: 25px;
-  left: 265px;
-}
+  text-align: right;
+    padding: 0 30px;
+display: block;
+  top: -50px;
+  fill: white;
+  top: -40px;
+  left: 225px;
+cursor: pointer;}
 
 .Creator {
 
@@ -153,19 +172,45 @@ body {
   margin-top: 20px;
 }
 
+.card__wrapper{
 
+  position: relative;
+  margin: 0 auto;
+
+}
 .cardpopup {
-  display: block;
   position: absolute;
-  z-index: 3000;
-  background-color: rgba(3, 2, 34, 0.9);
-
+  margin:0 auto ;
+  
   width: 100vw;
-  z-index: 30;
   height: 100vh;
+  background-color: rgba(3, 2, 34, 0.9);
+  z-index: 30;
 }
 
-.board {}
+.cardpopup__title{
+  resize: none;
+  color: white;
+  text-align: center;
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  font-size: 24px;
+}
+
+.popup_close{
+background-color:transparent;
+border:none;
+outline: none;
+cursor: pointer;
+font-size: 20px;
+margin-left: auto;
+color: white;
+margin-top: 10px;
+margin-right: 10px;
+}
 
 .card__content {
 
@@ -176,7 +221,7 @@ body {
   align-items: center;
   width: 500px;
   margin: 0 auto;
-  margin-top: 15%;
+  margin-top: 5%;
   background-color: gray;
   text-align: center;
   cursor: pointer;
@@ -201,4 +246,33 @@ body {
 .column__title-img {
   cursor: pointer;
   width: 32px;
+}
+.comment_btn{
+  width: 200px;
+  margin: 0 auto;
+}
+.comment_p{
+  word-wrap: break-word;
+}
+.comment_desc{
+
+  height: 100px;
+  resize: none;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 300px;
+}
+.comment_btns{
+  margin: 10px 0px;
+  display: flex;
+
+}
+.comment{
+  resize: none;
+}
+.comment.active{
+  background-color: black;
+}
+.popup__column{
+
 }

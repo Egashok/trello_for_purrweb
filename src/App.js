@@ -6,12 +6,6 @@ import Board from './components/Board';
 
 function App() {
 
-
-
-
-
-
-
   const [visible, setVisible] = useState(true)
 
   return (
